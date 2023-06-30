@@ -119,9 +119,14 @@ In addition to the model, the key logic for transactions can be found in the fol
 
 ## Next High Priority Items
 
-- email & communications
-- UI
-- testing
-- async
-- sending payments out of network
-- add parameters to API for searching/filtering
+If I had more time the next items that I would work on would be broken into two areas: features and technical improvements.
+
+For features I would focus on the following:
+- email & communications - currently users do not receive email or other notifications that they have sent or received payments.  Adding basic notifications would be a high priority, particularly to a recipient.
+- money withdraw - currently users can only send money to other users.  Adding the ability to withdraw money from the system would be a high priority.
+- sending payments out of network - currently users can only send payments to other users in the system.  Adding the ability to send payments to users outside of the system would create a mechanism to try and expand the user base.
+
+For technical improvements, I would focus on the following:
+- testing - there are currently no tests for the project.  Adding tests would be a high priority.  I would use pytest for testing and create tests for each endpoint.
+- CI/CD pipeline - I did not build a pipeline for this project, but I would add one and integrate the tests into the pipeline to ensure that future code does not introduce regressions.
+- Asynchronous transfers - the current code moves money immediately for both depositing and transfering.  Most financial systems do not move money immediately.  An asynchronous approach is a better overall approach.
