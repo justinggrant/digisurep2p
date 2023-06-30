@@ -16,7 +16,7 @@ The Digisure P2P payment system was built using Django Rest Framework.  Before r
 1. Create a virtual environment for the project
 
    ```
-   python3 -m venv <virtual env path>v
+   python3 -m venv <virtual env path>
    ```
 2. Activate the virtual environment
 
@@ -31,7 +31,7 @@ The Digisure P2P payment system was built using Django Rest Framework.  Before r
 4. Create the database
 
    ```
-   createdb --username=postgres digisurep2p
+   createdb --username=<postgres user> digisurep2p
    ```
 5. Add a .env file to the root of the project with the following:
 
@@ -40,7 +40,7 @@ The Digisure P2P payment system was built using Django Rest Framework.  Before r
 
     # local database
     APP_DB_NAME=digisurep2p
-    APP_DB_USER=postgres
+    APP_DB_USER=<postgres user>
     APP_DB_PASSWORD=<password for local postgres>
     APP_DB_HOST=127.0.0.1
     APP_DB_PORT=5432
